@@ -2,25 +2,22 @@ import csv
 import random
 
 
-# Funkcje pomocnicze
-def generate_inventory_id(group_code, item_type, unique_number):
-    return f"INV-{group_code}-{item_type}-{unique_number:04d}"
-
-
-def generate_model_code(group_code, model_number):
-    return f"MDL-{group_code}-{model_number:02d}"
-
-
-def generate_description(item_type, unique_suffix):
-    base_descriptions = {
-        "Finished Product": ["Steel Frame", "Metal Beam", "Structural Bracket", "Steel Plate", "Construction Module"],
-        "Semi-Finished": ["Processed Component", "Intermediate Frame", "Partially Welded Plate", "Fabricated Section"],
-        "Raw Material": ["Raw Steel", "Welding Rods", "Bolts and Screws", "Metal Sheets", "Industrial Paint"]
-    }
-    return f"{random.choice(base_descriptions[item_type])} {unique_suffix}"
-
-
 def generate_inventory(output_file):
+    # Funkcje pomocnicze
+    def generate_inventory_id(group_code, item_type, unique_number):
+        return f"INV-{group_code}-{item_type}-{unique_number:04d}"
+
+    def generate_model_code(group_code, model_number):
+        return f"MDL-{group_code}-{model_number:02d}"
+
+    def generate_description(item_type, unique_suffix):
+        base_descriptions = {
+            "Finished Product": ["Steel Frame", "Metal Beam", "Structural Bracket", "Steel Plate", "Construction Module"],
+            "Semi-Finished": ["Processed Component", "Intermediate Frame", "Partially Welded Plate", "Fabricated Section"],
+            "Raw Material": ["Raw Steel", "Welding Rods", "Bolts and Screws", "Metal Sheets", "Industrial Paint"]
+        }
+        return f"{random.choice(base_descriptions[item_type])} {unique_suffix}"
+
     # Parametry danych
     groups = {
         "STRC": "Structures",
@@ -75,5 +72,3 @@ def generate_inventory(output_file):
         writer.writerows(inventory_data)
 
     print(f"Data has been saved to {output_file}.")
-
-

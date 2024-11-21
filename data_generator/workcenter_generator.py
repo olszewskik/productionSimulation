@@ -5,8 +5,8 @@ import random
 def generate_workcenter(output_file):
     # Parametry danych
     departments = ["Welding", "Machining", "Assembly", "Painting", "Packaging"]
-    workcenters_range = (40, 45)
-    workstation_capacity_range = (1, 10)
+    workcenters_range = (17, 35)
+    workstation_capacity_range = (1, 5)
     efficiency_range = (75, 90)
     shifts = 2
     shift_hours = 8
@@ -21,7 +21,7 @@ def generate_workcenter(output_file):
 
     # Generowanie gniazd roboczych
     total_workcenters = random.randint(*workcenters_range)
-    department_distribution = [random.randint(5, 12) for _ in departments]
+    department_distribution = [random.randint(2, 7) for _ in departments]
     department_distribution[-1] = total_workcenters - sum(department_distribution[:-1])
 
     workcenter_id = 1
