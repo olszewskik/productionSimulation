@@ -3,3 +3,5 @@ from .bom_generator import generate_bom
 from .workcenter_generator import generate_workcenter
 from .workcenter_availabiity_generator import generate_workcenter_availabiity
 from .routing_generator import generate_routes
+from .customer_generator import generate_customers
+from .sales_order_generator import generate_sales_orders

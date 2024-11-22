@@ -1,0 +1,13 @@
+Customer ID,Customer Name,Country Code,Address
+CUST-001,Alpha Systems,PL,"Maple Road 128, 50-658 Krakow, PL"
+CUST-002,Epsilon Industries,PL,"River Lane 14, 96-654 Krakow, PL"
+CUST-003,Delta Logistics,PL,"River Lane 139, 51-850 Krakow, PL"
+CUST-004,Beta Systems,DE,"River Lane 179, 70515 Frankfurt, DE"
+CUST-005,Beta Logistics,DE,"Main Street 116, 70753 Munich, DE"
+CUST-006,Sigma Technologies,DE,"Oak Avenue 122, 87866 Cologne, DE"
+CUST-007,Zeta Industries,DE,"Main Street 162, 71252 Munich, DE"
+CUST-008,Gamma Solutions,DE,"Church Road 109, 73654 Hamburg, DE"
+CUST-009,Alpha Industries,SE,"Elm Street 52, 49745 Malmo, SE"
+CUST-010,Zeta Solutions,SE,"Park Avenue 27, 51718 Uppsala, SE"
+CUST-011,Alpha Logistics,SE,"Park Avenue 71, 68482 Uppsala, SE"
+CUST-012,Gamma Logistics,SE,"Church Road 51, 30415 Malmo, SE"
